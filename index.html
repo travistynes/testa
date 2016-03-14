@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TEST A</title>
+    
+    <!-- Link in stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+    
+    <!-- Loading Screen -->
+    <link rel="stylesheet" type="text/css" href="./css/game/LoadingScreen/screen.css">
+    
+    <!-- Splash Screen -->
+    <link rel="stylesheet" type="text/css" href="./css/game/SplashScreen/screen.css">
+    
+    <!-- Game Window -->
+    <link rel="stylesheet" type="text/css" href="./css/game/GameWindow/screen.css">
+    <link rel="stylesheet" type="text/css" href="./css/game/GameWindow/gui/gui.css">
+    <link rel="stylesheet" type="text/css" href="./css/game/GameWindow/mapwin.css">
+    <link rel="stylesheet" type="text/css" href="./css/game/GameWindow/gameover.css">
+</head>
+<body>
+    <div id="LoadingScreen">
+        <div><b>Loading, please wait...</b></div>
+    </div>
+    <div id="SplashScreen">
+        <br>
+        <div class="title">TEST: A</div>
+        <div class="intro">Intro message</div>
+        <br><center><div id="SplashScreen-message">hi-score</div></center><br>
+        <br>
+        <center>
+            <span id="SplashScreen-easyButton" class="button modeButton">Easy</span>
+            <span id="SplashScreen-normalButton" class="button modeButton">Normal</span>
+        </center>
+        <br><br>
+        <center>
+            <span id="SplashScreen-map1Button" class="button">Carrot</span>
+            <span id="SplashScreen-map2Button" class="button">Sloop</span>
+        </center>
+        <br><br>
+        <div class="footer">
+            <center>Music by Kevin MacLeod (incompetech.com) Licensed under Creative Commons 3.0</center>
+        </div>
+    </div>
+    <div id="GameWindow">
+        <canvas id="viewport"></canvas>
+        <div id="gui">
+            <div id="hud">
+                <div id="mapTitle">Map Title</div>
+                <div id="mapHiScore">Map hi-score</div>
+                <div id="mapTimer">Map timer</div>
+                <div id="barContainer">
+                    <div id="energyBar"></div>
+                </div>
+                <div id="fpslabel"></div>
+                <div id="messagePanel"><div id="messageBox"></div></div>
+                <div id="gui-optionsBox">
+                    <div><input id="flightPathCheckBox" type="checkbox">Path</div>
+                    <div id="gui-devButton" class="button">Dev</div>
+                    <div id="gui-easyButton" class="button">Easy</div>
+                    <div id="gui-normalButton" class="button">Normal</div>
+                    <div id="gui-quitButton" class="button">Quit</div>
+                </div>
+            </div>
+        </div>
+        <div id="MapWinWindow">
+            <div class="title">Title</div>
+            <br>
+            <div class="stats">Stats</div>
+            <br><br>
+            <span class="ready-button">Okay</span>
+            <br><br>
+            <div class="footer">Footer</div>
+        </div>
+        <div id="GameOverWindow">
+            <div class="gameover">Game Over</div>
+            <br>
+            <div class="title">Title</div>
+            <br><br>
+            <span class="restart-button">Okay</span>
+            <br><br>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+    
+    <!-- Load jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+    <!-- Load Babylon -->
+    <script src="./js/babylon.2.2.max.js"></script>
+    
+    <!-- Load game files -->
+    <script src="./js/Game/Game.js"></script>
+    <script src="./js/Game/Utils/Utils.js"></script>
+    <script src="./js/Game/Utils/MusicPlayer.js"></script>
+    <script src="./js/Game/SplashScreen.js"></script>
+    <script src="./js/Game/GUI.js"></script>
+    <script src="./js/Game/MapWin.js"></script>
+    <script src="./js/Game/GameOver.js"></script>
+    <script src="./js/Game/Utils/MessageBox.js"></script>
+    <script src="./js/Game/Scene.js"></script>
+    <script src="./js/Game/Camera/TrackCamera.js"></script>
+    <script src="./js/Game/Map/MapMan.js"></script>
+    <script src="./js/Game/Map/Map1.js"></script>
+    <script src="./js/Game/Map/Map2.js"></script>
+    <script src="./js/Game/Player/Player.js"></script>
+    <script src="./js/Game/Enemy/Block.js"></script>
+    <script src="./js/Game/Enemy/Pip.js"></script>
+    <script src="./js/Game/Enemy/Podder/Podder.js"></script>
+    <script src="./js/Game/Enemy/Podder/Pod.js"></script>
+    <script src="./js/Game/Item/MapGoal.js"></script>
+    <script src="./js/Game/Item/SpawnPoint.js"></script>
+    <script src="./js/Game/Item/Bullet.js"></script>
+    <script src="./js/Game/Item/Key.js"></script>
+    <script src="./js/Game/Item/EnergyCell.js"></script>
+</body>
+</html>

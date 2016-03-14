@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "title";
+    src: url("../fonts/title/Days.otf");
+}
+
+@font-face {
+    font-family: "titillium";
+    src: url("../fonts/titillium/Titillium-Regular.otf");
+}

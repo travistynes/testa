@@ -1,0 +1,147 @@
+#gui {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px solid #484848;
+    background-color: rgba(50, 0, 0, 0.0);
+}
+
+#fpslabel {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding: 2px;
+    font-family: "arial";
+    font-size: small;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid #484848;
+}
+
+#mapTitle {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    padding: 0px; /* padding causing scroll bar */
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: "title";
+    color: #FFF2AB;
+    background-color: rgba(0, 0, 0, .6);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #484848;
+    display: none;
+}
+
+#mapHiScore {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 2px;
+    font-size: large;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid #484848;
+}
+
+#mapTimer {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    padding: 2px;
+    font-size: x-large;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid #484848;
+}
+
+#barContainer {
+    width: 100%;
+    background-color: #2D2D2D;
+    display: none; /* Not currently in use */
+}
+
+#energyBar {
+    position: absolute;
+    bottom: 0px;
+    width: 0%;
+    height: 1%;
+    background-color: rgba(138, 255, 89, 0.4);
+}
+
+#gui-optionsBox {
+    position: absolute;
+    bottom: 4%;
+    right: 5px;
+    padding: 5px;
+    font-size: small;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid #484848;
+}
+
+#gui-optionsBox .button {
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgba(135, 238, 255, .3);
+    border: 1px solid #D4D4D4;
+}
+
+#gui-optionsBox .buttonHover {
+    cursor: pointer;
+    color: #000000;
+    background-color: rgba(135, 238, 255, .8);
+    border: 1px solid #B3B3B3;
+}
+
+/* Outer panel needed to absolutely position the message box */
+#messagePanel {
+    position: absolute;
+    bottom: 4%; /* Position from bottom */
+    left: 10px;
+    width: 30%;
+    /*height: 30%;*/
+    border: 0px solid #484848;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "arial";
+    font-size: medium;
+    overflow: hidden;
+    display: flex; /* This and flex-direction make text align to bottom and overflow at top */
+    flex-direction: column-reverse;
+    display: none; /* For now, the message panel is disabled / hidden. */
+}
+
+.message {
+    padding: 2px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .7);
+    display: inline-block;
+}
+
+.message-highlight {
+    padding: 2px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .7);
+    display: inline-block;
+}
+
+.message-system {
+    padding: 2px;
+    color: #FCFF6A;
+    background-color: rgba(0, 0, 0, .7);
+    display: inline-block;
+}
+
+.message-warning {
+    padding: 2px;
+    color: #FFFFFF;
+    background-color: rgba(255, 50, 50, .7);
+    display: inline-block;
+}

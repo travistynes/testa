@@ -1,0 +1,16 @@
+#GameWindow {
+    position: relative; /* Allows position this div. Any sub divs with absolute position are relative to this div, and will move along with it. */
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    font-family: "titillium";
+    display: none;
+}
+
+/* The play scene canvas */
+#viewport {
+    width: 100%;
+    height: 100%;
+    border: 0px solid #222222;
+    background-color: #222222;
+}

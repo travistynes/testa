@@ -1,0 +1,39 @@
+#MapWinWindow {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    font-family: arial;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #484848;
+    overflow: auto;
+    display: none;
+}
+
+#MapWinWindow .title {
+    color: #FFFFFF;
+    font-size: x-large;
+}
+
+#MapWinWindow .stats {
+    color: #FFFFFF;
+    font-size: medium;
+    border: 0px solid #484848;
+}
+
+#MapWinWindow .footer {
+    color: #FFFFFF;
+    font-size: small;
+}
+
+#MapWinWindow .ready-button {
+    padding: 5px;
+    color: #0A2127;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgb(135, 238, 255);
+    border: 1px solid #FFFFFF;
+}

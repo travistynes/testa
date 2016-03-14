@@ -1,0 +1,46 @@
+#GameOverWindow {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    font-family: arial;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #484848;
+    overflow: auto;
+    display: none;
+}
+
+#GameOverWindow .gameover {
+    color: #FFD980;
+    font-size: small;
+    font-weight: bold;
+}
+
+#GameOverWindow .title {
+    color: #FFFFFF;
+    font-size: x-large;
+}
+
+#GameOverWindow .stats {
+    color: #FFFFFF;
+    font-size: medium;
+    border: 0px solid #484848;
+}
+
+#GameOverWindow .footer {
+    color: #FFFFFF;
+    font-size: small;
+}
+
+#GameOverWindow .restart-button {
+    padding: 5px;
+    color: #0A2127;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgb(135, 238, 255);
+    border: 1px solid #FFFFFF;
+}

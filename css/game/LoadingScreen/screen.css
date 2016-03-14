@@ -1,0 +1,6 @@
+#LoadingScreen {
+    height: 100%;
+    color: #FFFFFF;
+    background-color: #222222;
+    display: none;
+}

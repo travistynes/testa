@@ -1,0 +1,68 @@
+#SplashScreen {
+    height: 100%;
+    background-image:url("./images/background1.png");
+    background-size: 100% 100%;
+    background-color: #222222;
+    font-family: arial;
+    display: none;
+}
+
+#SplashScreen .title {
+    padding: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "title";
+    font-size: xx-large;
+}
+
+#SplashScreen-message {
+    padding: 2px;
+    text-align: center;
+    color: #000000;
+    background-color: rgba(253, 255, 122, 0.9);
+    border: 1px solid #484848;
+    font-family: "titillium";
+    font-size: small;
+    display: inline-block;
+}
+
+#SplashScreen .intro {
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .6);
+    border: 1px solid #484848;
+    font-family: "titillium";
+    font-size: medium;
+}
+
+#SplashScreen .button {
+    padding: 5px;
+    color: #FFFFFF;
+    font-family: "titillium";
+    font-size: small;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, .3);
+    border: 1px solid #B3B3B3;
+    display: none;
+}
+
+#SplashScreen .buttonHover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #B3B3B3;
+}
+
+#SplashScreen .buttonClick {
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #FF9900;
+}
+
+#SplashScreen .footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: small;
+    color: #BBBA8E;
+    border: 0px solid #B3B3B3;
+}
